@@ -21,14 +21,14 @@ kaspad_address: localhost:38138
 # If you don't want to change the default to match your device(s), the vardiff 
 # engine will adjust to an appropriate diff for lower hashrate devices within a 
 # few minutes.
-min_share_diff: 126
+min_share_diff: 128
 
 # pow2_clamp: restrict difficulty to 2^n (e.g. 64, 128, 256, etc). This is 
 # required for IceRiver and BitMain ASICs, where difficulties further away from
 # powers of 2 cause higher error rates.  Using this feature will limit the 
 # functionality of vardiff, such that the shares_per_min becomes more of a 
 # minimum, rather than a target we can expect to converge on.
-pow2_clamp: false
+pow2_clamp: true
 
 # var_diff: if true, enables the auto-adjusting variable share diff mechanism. 
 # Starts with the value defined by the 'min_share_diff' setting, then checks 
